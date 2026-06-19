@@ -32,27 +32,25 @@ You don't need to know how to code to use this. Just follow the steps below once
 
 ## Setup (about 5 minutes, one time)
 
-You'll do this once per document. Take it slowly and it's just copy, paste, and click.
+You'll do this once per document. It's just copy, paste, should work.
 
 **1. Make the tab that will hold the finished version.**
-In your document, open the tabs panel on the left (click **Show tabs & outline**, the little list icon near the top-left). Click the **+** at the bottom to add a new tab. Name it exactly **Combined Book**. This is where your assembled document will appear.
+In your document, add a tab and name it exactly **Combined Book**. This is where your assembled document will appear.
 
 **2. Open the script editor.**
-At the top of your document, click **Extensions → Apps Script**. A new browser tab opens with a code editor. Don't worry about understanding what's there.
+At the top of your document, click **Extensions → Apps Script**. A new browser tab opens with a code editor.
 
 **3. Paste in the script.**
-In that editor, select everything in the box (click in it, then press **Ctrl+A** / **Cmd+A**) and delete it. Then open the [`CombineTabs.gs`](CombineTabs.gs) file from this project, copy all of it, and paste it in. Click the **Save** icon (the floppy disk).
+In that editor, delete everything in the editor box, if it's not customized. Then open the [`CombineTabs.gs`](CombineTabs.gs) file from this project, copy all of it, and paste it in. You shouldn't have to change anything in the script. Click the **Save** icon (the floppy disk). 
 
-**4. Turn on the one extra feature it needs.**
+**4. Turn on API support for the emoji formatting to work.**
 On the left side of the script editor there's a small menu with a heading called **Services**. Click the **+** next to it. In the list that appears, find and click **Google Docs API**, then click **Add**. (This lets the script handle footnotes and emoji markers.)
 
 **5. Go back and find the new menu.**
 Return to your document's browser tab and refresh the page. After a few seconds, a new menu called **Combine Tabs** appears at the top, next to Help.
 
 **6. Run it for the first time.**
-Click **Combine Tabs → Rebuild Combined Book**. Google will ask you to give the script permission — this is normal. See the note just below about the warning screen, then come back and continue.
-
-That's it. Your combined document appears in the "Combined Book" tab.
+Click **Combine Tabs → Rebuild Combined Book**. Google will ask you to give the script permission — this is normal.
 
 ### About the permission warning
 
@@ -63,6 +61,14 @@ The first time you run it, Google shows some warning screens because this is a p
 3. Click **Allow**.
 
 You only have to do this once.
+
+That's it. Longer documents can take a minute or two, but it'll get there eventually. Your combined document appears in the "Combined Book" tab. Running it again will wipe out the Combined Book tab, and fill it again from scratch.
+
+## WARNING!!!
+The 'Combined Book' tab is intended to be a temporary holding place for the output. It will be deleted and rewritten from scratch by the content in the indivdiual tabs every time it's run. DO NOT MAKE ANY EDITS THERE.
+
+Make edits in the original tabs, and then re-combine to update the Combined Book tab.
+
 
 ## How to use it day to day
 
